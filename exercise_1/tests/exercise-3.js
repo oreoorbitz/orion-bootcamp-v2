@@ -1,40 +1,50 @@
 /**
- * Verifica si un número es colorido
- * Un número es colorido si todos los productos de subconjuntos consecutivos
- * de sus dígitos son diferentes
- * 
- * Solo se consideran números de hasta 3 dígitos (0 <= numero <= 999).
- * Si el número está fuera de este rango, se debe arrojar un error con:
- * "El número debe estar entre 0 y 999"
+ * EJERCICIO DE MÚLTIPLES FUNCIONES
  *
- * Ejemplo de 324:
- * - Dígitos: 3, 2, 4
- * - Productos: 3, 2, 4, 3*2=6, 2*4=8, 3*2*4=24
- *   Todos son distintos => true
+ * Instrucciones:
+ *  1. Crea una función llamada "doble" que reciba un número y retorne el doble de ese número.
+ *  2. Crea una función llamada "triple" que reciba un número y retorne el triple de ese número.
+ *  3. Crea una función llamada "dobleMasTriple" que reciba un número y:
+ *     - Use las funciones "doble" y "triple"
+ *     - Retorne la suma del doble y el triple de ese número
  *
- * Ejemplo de 236:
- * - Dígitos: 2, 3, 6
- * - Productos: 2, 3, 6, 2*3=6, 3*6=18, 2*3*6=36
- *   Se repite 6 => false
+ * Ejemplos:
+ *  - doble(2) => 4
+ *  - triple(3) => 9
+ *  - dobleMasTriple(2) => 4 + 6 = 10
  *
- * @param {number} numero - El número a verificar
- * @returns {boolean} Verdadero si el número es colorido, falso en caso contrario
+ * Asegúrate de exportar las funciones con los nombres exactos:
+ *  - doble
+ *  - triple
+ *  - dobleMasTriple
  *
- * @example
- * // Para 324, se espera true
- * numeroColorido(324)
- *
- * @example
- * // Para 236, se espera false
- * numeroColorido(236)
- *
- * @example
- * // Para 1000, se espera un error con "El número debe estar entre 0 y 999"
- * numeroColorido(1000)
+ * (Las pruebas esperan que existan y se llamen así.)
  */
-const numeroColorido = (numero) => {
-    // TODO: Implementar la función
-  }
-  
-  export default numeroColorido
-  
+
+/**
+ * TODO: Implementar la función para que reciba un número y retorne el doble.
+ * @param {number} numero - El número que se va a doblar
+ * @returns {number} El doble del número
+ */
+export const doble = (numero) => {
+  // TODO: Implementar la función
+}
+
+/**
+ * TODO: Implementar la función para que reciba un número y retorne el triple.
+ * @param {number} numero - El número que se va a triplicar
+ * @returns {number} El triple del número
+ */
+export const triple = (numero) => {
+  // TODO: Implementar la función
+}
+
+/**
+ * TODO: Implementar la función para que reciba un número y devuelva la suma 
+ * del doble y el triple de dicho número.
+ * @param {number} numero - El número base
+ * @returns {number} La suma del doble del número y el triple del número
+ */
+export const dobleMasTriple = (numero) => {
+  // TODO: Implementar la función
+}

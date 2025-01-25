@@ -1,6 +1,5 @@
 import edadEnDias from './exercise-1.js'
 import cualEsTuNombre from './exercise-2.js'
-import numeroColorido from './exercise-3.js'
 
 describe('Ejercicios de escalares', () => {
   test('Edad en días', () => {
@@ -14,9 +13,22 @@ describe('Ejercicios de escalares', () => {
     expect(cualEsTuNombre('Ana', 'Gómez')).toBe('Hola, Ana Gómez!')
   })
 
-  test('Número colorido', () => {
-    expect(numeroColorido(324)).toBe(true) // Productos: 3, 2, 4, 6, 8, 24
-    expect(numeroColorido(236)).toBe(false) // Productos: 2, 3, 6, 6, 12, 36 (6 se repite)
-    expect(() => numeroColorido(1000)).toThrow('El número debe estar entre 0 y 999')
+  test('Funciones compuestas', () => {
+    // Probamos la función "doble"
+    expect(doble(2)).toBe(4)
+    expect(doble(5)).toBe(10)
+
+    // Probamos la función "triple"
+    expect(triple(3)).toBe(9)
+    expect(triple(7)).toBe(21)
+
+    // Probamos la función "dobleMasTriple" que usa las dos anteriores
+    // Ejemplo con 2: doble(2) = 4, triple(2) = 6 => 4 + 6 = 10
+    expect(dobleMasTriple(2)).toBe(10)
+
+    // Ejemplo con 4: doble(4) = 8, triple(4) = 12 => 8 + 12 = 20
+    expect(dobleMasTriple(4)).toBe(20)
   })
+
+
 })
