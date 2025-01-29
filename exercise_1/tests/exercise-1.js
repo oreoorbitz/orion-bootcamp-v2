@@ -22,7 +22,7 @@ function edadEnDias(años){
 return años * 365;
 }
 
-resultado = edadEnDias(1)
+let resultado = edadEnDias(1)
 console.log(resultado)    
 
 
