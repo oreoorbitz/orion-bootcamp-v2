@@ -1,8 +1,9 @@
 /**
  * Genera un saludo utilizando el nombre de una persona
- * Debe devolver "Hola, <primerNombre> <apellido>!"
+ * Debe devolver "Hola, <primerNombre> <apellido>"!
  * (incluyendo la exclamación al final)
  *
+ * 
  * @param {string} primerNombre - El primer nombre de la persona
  * @param {string} apellido - El apellido de la persona
  * @returns {string} El mensaje de saludo
@@ -16,8 +17,8 @@
  * cualEsTuNombre("Ana", "Gómez")
  */
 const cualEsTuNombre = (primerNombre, apellido) => {
-    // TODO: Implementar la función
-  }
-  
-  export default cualEsTuNombre
-  
+  return "Hola " + primerNombre + " " + apellido + "!"
+}
+
+  console.log(cualEsTuNombre("Adrian", "Lopez"));
+  export default  cualEsTuNombre
