@@ -27,8 +27,9 @@
  * @returns {number} El doble del número
  */
 export const doble = (numero) => {
-  // TODO: Implementar la función
+  return numero * 2;
 }
+
 
 /**
  * TODO: Implementar la función para que reciba un número y retorne el triple.
@@ -36,7 +37,7 @@ export const doble = (numero) => {
  * @returns {number} El triple del número
  */
 export const triple = (numero) => {
-  // TODO: Implementar la función
+return numero * 3;
 }
 
 /**
@@ -46,5 +47,12 @@ export const triple = (numero) => {
  * @returns {number} La suma del doble del número y el triple del número
  */
 export const dobleMasTriple = (numero) => {
-  // TODO: Implementar la función
+return 
+const resultadoDoble = doble (numero)
+const resultadoTriple = triple (numero)
+console.log(resultadoDoble + resultadoTriple)
 }
+dobleMasTriple(10)
+
+const a = "a"
+const b = "b"

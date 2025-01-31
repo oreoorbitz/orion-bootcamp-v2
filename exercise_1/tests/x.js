@@ -1,5 +1,11 @@
-const doble = (numero) => {
-    return numero * 2;
+const doble = function(numero)  {
+    return numero * 2
 }
-    console.log(doble (10))
 
+/** @type {number} */
+const numero = 2
+
+/** @type {number} */
+const r = doble(numero)
+
+console.log(r)
