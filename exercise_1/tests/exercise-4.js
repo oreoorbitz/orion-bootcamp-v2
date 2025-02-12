@@ -16,17 +16,15 @@
  * Ejemplos:
  *   checarTipo(10, "number") => "La variable es number: true"
  *   checarTipo("Hola", "number") => "La variable es number: false"
- *   checarTipo(10, "string") => "La variable es string: false"
- *   checarTipo("10", "string") => "La variable es string: true"
  *
  * @param {*} variable - La variable de cualquier tipo que vamos a verificar
  * @param {string} tipoEsperado - El tipo de dato que se espera (por ejemplo, "number")
  * @returns {string} Un mensaje indicando el tipo esperado y si la variable coincide
  */
 const checarTipo = (variable, tipoEsperado) => {
-    const  tipo = typeof variable
-    const resultado = tipoEsperado === tipo
-    return `El tipo esperado es ${tipo} y coincide con la variable:${resultado}`;  
+  const  tipo = typeof variable
+  const resultado = tipoEsperado === tipo
+  return `El tipo esperado es ${tipo} y coincide con la variable:${resultado}`;  
 }
 const r = checarTipo(21, "number");
 
@@ -34,7 +32,3 @@ console.log(checarTipo(21, "number")); //true
 console.log(checarTipo("String", "number")); //false
 console.log(checarTipo(21, "string")); //false
 console.log(checarTipo("21", "string"));//true
-
-
-
-
