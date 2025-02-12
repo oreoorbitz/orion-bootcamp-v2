@@ -47,3 +47,26 @@ describe('Ejercicio 4: Checar tipo y condicionales', () => {
     expect(checarTipo(undefined, 'boolean')).toBe('La variable es boolean: false')
   })
 })
+
+// NUEVO BLOQUE DE PRUEBAS PARA EJERCICIO 5: Conversión de Centavos a Formato Monetario
+describe('Ejercicio 5: Conversión de Centavos a Formato Monetario', () => {
+  test('Convierte 1234 centavos a USD correctamente', () => {
+    expect(convertirCentsAMoneda(1234, 'USD')).toBe('$12.34')
+  })
+
+  test('Convierte 50 centavos a EUR correctamente', () => {
+    expect(convertirCentsAMoneda(50, 'EUR')).toBe('€0.50')
+  })
+
+  test('Maneja centavos en 0 correctamente', () => {
+    expect(convertirCentsAMoneda(0, 'USD')).toBe('$0.00')
+  })
+
+  test('Retorna "Valor inválido" para centavos negativos', () => {
+    expect(convertirCentsAMoneda(-100, 'GBP')).toBe('Valor inválido')
+  })
+
+  test('Retorna "Código de moneda inválido" para un código de moneda desconocido', () => {
+    expect(convertirCentsAMoneda(200, 'ABC')).toBe('Código de moneda inválido')
+  })
+})
