@@ -35,8 +35,24 @@ const monedas = {
   }
   
   const convertirCentsAMoneda = (centavos, codigoMoneda) => {
-    // TODO: Implementar la función
+    if ( centavos < 0){
+      return "Valor invalido"
+  }  
+  if (!monedas[codigoMoneda] ){
+      return "Codigo de moneda invalido"
   }
+  const resultado = (centavos / 100).toFixed(2)
   
-  export { convertirCentsAMoneda, monedas }
+  return  `${monedas.USD}${resultado}`
+  
+}
+
+ const convercion = convertirCentsAMoneda(-4000, "GBP" )
+
+ const convercionDos = convertirCentsAMoneda(1000, "EURR")
+
+ const convercionTres = convertirCentsAMoneda(2000, "USD")
+
+  
+  export { convertirCentsAMoneda, monedas}
   
