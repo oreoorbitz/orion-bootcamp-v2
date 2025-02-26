@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+     "test:kata1": "vitest kata-1.test.js"
   },
   "author": "",
   "license": "ISC",
