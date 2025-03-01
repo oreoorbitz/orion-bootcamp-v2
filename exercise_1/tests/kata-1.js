@@ -5,7 +5,9 @@
  * @param {number} x - El número a duplicar.
  * @returns {number} El doble de x.
  */
-const doble = x => x ___ 2
+const doble = (x) => {
+  return x * 2
+}
 
 /**
  * Calcula el triple de un número.
@@ -13,7 +15,7 @@ const doble = x => x ___ 2
  * @returns {number} El triple de x.
  */
 const triple = (x) => {
-    return x ___ 3
+    return x * 3
 }
 
 /**
@@ -22,7 +24,7 @@ const triple = (x) => {
  * @returns {number} El cuádruple de x.
  */
 const cuadruple = function(x) {
-    return x ___ 4
+    return x * 4
 }
 
 /**
@@ -31,7 +33,7 @@ const cuadruple = function(x) {
  * @returns {number} El quíntuple de x.
  */
 function quintuple(x) {
-    return x ___ 5
+    return x * 5
 }
 
 /**
@@ -39,7 +41,7 @@ function quintuple(x) {
  * @param {*} x - El valor a comprobar.
  * @returns {boolean} true si x es un número, false en caso contrario.
  */
-const esTipoNumero = x => typeof x === ___
+const esTipoNumero = x => typeof x === "number"
 
 /**
  * Verifica si el valor es de tipo 'string'.
@@ -47,7 +49,7 @@ const esTipoNumero = x => typeof x === ___
  * @returns {boolean} true si x es una cadena, false en caso contrario.
  */
 const esTipoString = (x) => {
-    return typeof x === ___
+    return typeof x === "string"
 }
 
 /**
@@ -56,7 +58,7 @@ const esTipoString = (x) => {
  * @returns {boolean} true si x es booleano, false en caso contrario.
  */
 const esTipoBoolean = function(x) {
-    return typeof x === ___
+    return typeof x === "boolean"
 }
 
 /**
@@ -65,7 +67,7 @@ const esTipoBoolean = function(x) {
  * @returns {boolean} true si x es null, false en caso contrario.
  */
 function esTipoNull(x) {
-    return x === ___
+    return x === "boolean"
 }
 
 // Ejemplos adicionales de funciones simples
@@ -76,7 +78,11 @@ function esTipoNull(x) {
  * @param {number} b - Segundo número.
  * @returns {number} La suma de a y b.
  */
-const sumar = (a, b) => a ___ b
+const sumar = (a, b) => {
+  const r = sumar (2, 2) 
+  return a + b
+}
+
 
 /**
  * Resta dos números.
@@ -85,7 +91,8 @@ const sumar = (a, b) => a ___ b
  * @returns {number} La diferencia entre a y b.
  */
 const restar = (a, b) => {
-    return a ___ b
+  const r2 = restar(4, 2)
+    return a - b
 }
 
 /**
@@ -95,7 +102,8 @@ const restar = (a, b) => {
  * @returns {number} El producto de a y b.
  */
 function multiplicar(a, b) {
-    return a ___ b
+  const r3 = multiplicar(2, 4)
+    return a * b
 }
 
 /**
@@ -105,7 +113,8 @@ function multiplicar(a, b) {
  * @returns {number} El cociente de a dividido por b.
  */
 const dividir = function(a, b) {
-    return a ___ b
+  const r4 = dividir(20, 5)
+    return a / b
 }
 
 /**
@@ -113,7 +122,10 @@ const dividir = function(a, b) {
  * @param {number} num - El número a verificar.
  * @returns {boolean} true si num es par, false de lo contrario.
  */
-const esPar = num => num % ___ === 0
+const esPar = (num) => {
+  return num % "boolean" === 0
+
+}
 
 /**
  * Saluda a una persona concatenando su nombre.
@@ -121,7 +133,7 @@ const esPar = num => num % ___ === 0
  * @returns {string} Un saludo personalizado.
  */
 function saludar(nombre) {
-    return ___ + nombre
+    return  `Hola que tal ${nombre}!` 
 }
 
 /**
@@ -129,7 +141,9 @@ function saludar(nombre) {
  * @param {number} x - El número a elevar al cuadrado.
  * @returns {number} El cuadrado de x.
  */
-const elevarAlCuadrado = x => x ___ x
+const elevarAlCuadrado = (x) => {
+  x * x
+}
 
 /**
  * Concatena dos cadenas con un espacio entre ellas.
@@ -138,7 +152,8 @@ const elevarAlCuadrado = x => x ___ x
  * @returns {string} La concatenación de a y b con un espacio.
  */
 const concatenar = function(a, b) {
-    return a ___ " " ___ b
+  
+    return a + " " + b
 }
 
 /**
@@ -146,7 +161,7 @@ const concatenar = function(a, b) {
  * @param {string} str - La cadena a convertir.
  * @returns {string} La cadena en mayúsculas.
  */
-const mayusculas = str => str.___()
+const mayusculas = str => str.toUpperCase()
 
 /**
  * Comprueba si una cadena está vacía (después de quitar espacios).
@@ -154,7 +169,7 @@ const mayusculas = str => str.___()
  * @returns {boolean} true si la cadena está vacía, false en caso contrario.
  */
 function esCadenaVacia(str) {
-    return str.___() === ___
+    return str.trim() === ____
 }
 
 // Ejemplos adicionales usando estructuras de control (if-else)
@@ -165,8 +180,8 @@ function esCadenaVacia(str) {
  * @returns {string} Saludo si x es una cadena, o mensaje de error.
  */
 const saludarSiString = x => {
-    if (typeof x ___ 'string') {
-      return ___ + x;
+    if (typeof x === 'string') {
+      return `Hola ${x}` + x;
     } else {
       return "No es una cadena";
     }
@@ -178,7 +193,7 @@ const saludarSiString = x => {
  * @returns {string} "No es un número" si x no es numérico, "Positivo", "Negativo" o "Cero" según corresponda.
  */
 const clasificarNumero = x => {
-    if (typeof x ___ 'number') {
+    if (typeof x === 'number') {
       return "No es un número";
     } else if (x > 0) {
       return "Positivo";
@@ -196,14 +211,14 @@ const clasificarNumero = x => {
  */
 const verificarTipoYValor = x => {
     if (typeof x === 'number') {
-      if (x % ___ === 0) {
+      if (x % 2 === 0) {
         return "Número par";
       } else {
         return "Número impar";
       }
     } else {
       return "No es un número";
-    }
+    }//estoy atorado !HELP
 }
 
 /**
@@ -212,7 +227,7 @@ const verificarTipoYValor = x => {
  * @returns {string} "Excelente" si nota ___ 90, o "Necesita mejorar" en otro caso.
  */
 const evaluarCalificacion = nota => {
-    if (nota ___ 90) {
+    if (nota >= 90) {
       return "Excelente";
     } else {
       return "Necesita mejorar";
@@ -227,7 +242,7 @@ const evaluarCalificacion = nota => {
 const verificarRango = x => {
     if (typeof x !== 'number') {
       return "No es un número";
-    } else if (x ___ 0 && x <= 100) {
+    } else if (x >= 0 && x <= 100) {
       return "Dentro del rango";
     } else {
       return "Fuera del rango";
@@ -240,7 +255,7 @@ const verificarRango = x => {
  * @returns {boolean} true si es "Sábado" o "Domingo", false en caso contrario.
  */
 const esFinDeSemana = dia => {
-    if (dia === "Sábado" || dia === ___) {
+    if (dia === "Sábado" || dia === "Domingo") {
       return true;
     } else {
       return false;
@@ -255,7 +270,7 @@ const esFinDeSemana = dia => {
 const determinarCategoriaEdad = edad => {
     if (typeof edad !== 'number') {
       return "Edad no válida";
-    } else if (edad ___ 13) {
+    } else if (edad < 13) {
       return "Niño";
     } else if (edad >= 13 && edad < 20) {
       return "Adolescente";
@@ -272,11 +287,11 @@ const determinarCategoriaEdad = edad => {
  * @returns {string} "Nombre inválido" si nombre no es una cadena o está vacío, "Nombre válido" en caso contrario.
  */
 const validarNombre = nombre => {
-    if (typeof nombre ___ 'string' || nombre.trim() === "") {
+    if (typeof nombre !== 'string' || nombre.trim() === "") {
       return "Nombre inválido";
     } else {
       return "Nombre válido";
-    }
+    }   
 }
 
 /**
@@ -287,10 +302,10 @@ const validarNombre = nombre => {
 const evaluarBooleano = valor => {
     if (typeof valor !== 'boolean') {
       return "No es booleano";
-    } else if (valor ___ true) {
+    } else if (valor === true) {
       return "Es verdadero";
     } else {
-      return "Es falso";
+      return "Es falso"; 
     }
 }
 
