@@ -67,6 +67,41 @@ const monedas = {
  * @returns {string} Un mensaje resumen o "Datos inválidos" si algún parámetro no es del tipo esperado.
  */
 const generarResumen = (primerNombre, apellido, años, centavos, codigoMoneda) => {
+  if (typeof primerNombre !== "string" || typeof apellido !== "string" ||
+    typeof años !== "number" || typeof codigoMoneda !== "string") {
+    return "Datos invalidos"
+}
+
+
+const cualEsTuNombre = (primerNombre, apellido) => {
+    return `Hola ${primerNombre} ${apellido}`
+}
+
+
+
+const edadEnDias = (años) => {
+    return años * 365
+}
+
+
+const convertirCentsAMoneda = (centavos, codigoMoneda) => {
+    if (centavos < 0) {
+        return "Valor invalido"
+    }
+    if (!monedas[codigoMoneda]) {
+        return "Codigo de moneda invalido"
+    }
+    const convercion = (centavos / 100).toFixed(2)
+    return  `${monedas.USD} ${convercion}`
+}
+
+const saludo = cualEsTuNombre(primerNombre, apellido)
+const dias = edadEnDias(años)
+const formato = convertirCentsAMoneda(centavos, codigoMoneda)
+
+
+return  `${saludo} tienes ${dias} dias de vida, tu compra de ${formato} ha sido registrada `
+
   // TODO: Validar que los parámetros sean del tipo correcto usando typeof.
   // Si alguno es inválido, retornar "Datos inválidos".
 
