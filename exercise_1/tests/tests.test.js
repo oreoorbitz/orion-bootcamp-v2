@@ -4,6 +4,8 @@ import { doble, triple, dobleMasTriple } from './exercise-3.js'
 import checarTipo from './exercise-4.js'
 import generarResumen from './exercise-6.js'
 import { convertirCentsAMoneda } from './exercise-5.js'
+import manipulaArray from './exercise-8';
+import sumarElementos from './exercise-9.js'
 
 describe('Ejercicios de escalares', () => {
   test('Edad en días', () => {
@@ -106,5 +108,20 @@ describe('Ejercicio 8: Crear y Manipular ARRAY', () => {
   test('El resultado debe ser de tipo string o number', () => {
     const res = manipulaArray();
     expect(typeof res === "string" || typeof res === "number").toBe(true);
+  });
+});
+
+describe('Ejercicio 9: Sumar Elementos de un Array usando un For Loop', () => {
+  test('Suma correctamente los elementos de un array', () => {
+    expect(sumarElementos([1, 2, 3, 4])).toBe(10);
+    expect(sumarElementos([5, 5, 5])).toBe(15);
+  });
+  
+  test('Retorna "Datos inválidos" si el parámetro no es un array', () => {
+    expect(sumarElementos("no es array")).toBe("Datos inválidos");
+  });
+  
+  test('Retorna "Datos inválidos" si algún elemento no es un número', () => {
+    expect(sumarElementos([1, "2", 3])).toBe("Datos inválidos");
   });
 });
