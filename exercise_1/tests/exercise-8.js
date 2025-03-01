@@ -26,8 +26,5 @@ const manipulaArray = () => {
     // TODO: Retorna el elemento en la posición 1 del array.
   };
   
-  // Ejemplo de uso (agrega tus propios console.log para probar):
-  console.log("Ejercicio 8 - manipulaArray():", manipulaArray());
-  
   export default manipulaArray;
   
