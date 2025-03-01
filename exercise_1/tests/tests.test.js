@@ -97,3 +97,14 @@ describe('Ejercicio 6: Generar Resumen de Usuario y Transacción', () => {
     expect(generarResumen(123, 'Pérez', 10, 1234, 'USD')).toBe("Datos inválidos")
   })
 })
+
+describe('Ejercicio 8: Crear y Manipular ARRAY', () => {
+  test('Retorna "b" cuando el array es ["a", "b", "c"]', () => {
+    expect(manipulaArray()).toBe("b");
+  });
+
+  test('El resultado debe ser de tipo string o number', () => {
+    const res = manipulaArray();
+    expect(typeof res === "string" || typeof res === "number").toBe(true);
+  });
+});
