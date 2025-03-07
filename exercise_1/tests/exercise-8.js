@@ -19,6 +19,10 @@
  * @returns {string|number} El segundo elemento del array.
  */
 const manipulaArray = () => {
+  const myArray = []
+  myArray.push("a", "b", "c")
+  return (myArray[1])
+  
     // TODO: Declara un array vacío llamado "myArray".
     
     // TODO: Agrega tres elementos al array usando el método push.
@@ -26,5 +30,5 @@ const manipulaArray = () => {
     // TODO: Retorna el elemento en la posición 1 del array.
   };
   
+  console.log(manipulaArray)
   export default manipulaArray;
-  

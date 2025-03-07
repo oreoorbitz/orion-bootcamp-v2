@@ -22,18 +22,23 @@
  * @returns {number|string} La suma total de los elementos o "Datos inválidos" si la validación falla.
  */
 const sumarElementos = (numeros) => {
-    // TODO: Verifica que 'numeros' es un array y que cada elemento es un número.
-    // Si no, retorna "Datos inválidos".
+  if (!Array.isArray(numeros)){
+    console.log(numeros)
     
-    // TODO: Declara una variable 'suma' e inicialízala en 0.
-    
-    // TODO: Usa un bucle for para recorrer el array y sumar cada elemento a 'suma'.
-    
-    // TODO: Retorna la variable 'suma'.
-  };
-  
-  // Ejemplo de uso: Agrega tus propios console.log para probar la función.
-  console.log("Ejercicio 9 - sumarElementos([1, 2, 3, 4]):", sumarElementos([1, 2, 3, 4]));
-  
-  export default sumarElementos;
-  
+  }
+
+
+  // TODO: Verifica que 'numeros' es un array y que cada elemento es un número.
+  // Si no, retorna "Datos inválidos".
+
+  // TODO: Declara una variable 'suma' e inicialízala en 0.
+
+  // TODO: Usa un bucle for para recorrer el array y sumar cada elemento a 'suma'.
+
+  // TODO: Retorna la variable 'suma'.
+};
+
+// Ejemplo de uso: Agrega tus propios console.log para probar la función.
+//console.log("Ejercicio 9 - sumarElementos([1, 2, 3, 4]):", sumarElementos([1, 2, 3, 4]));
+console.log(sumarElementos)
+
