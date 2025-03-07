@@ -1,51 +1,50 @@
 /**
- * EJERCICIO 9: SUMAR ELEMENTOS DE UN ARRAY USANDO UN FOR LOOP
+ * EJERCICIO 10: GENERAR RANGO EN UN ARRAY
  *
  * Instrucciones:
- *   1. Crea una función llamada "sumarElementos" que reciba un array de números.
+ *   1. Crea una función llamada "generarRango" que reciba un parámetro:
+ *        - n (number): Un número entero.
  *   2. La función debe:
- *        a. Verificar que el parámetro sea un array (usa Array.isArray) y que cada elemento sea un número (usa typeof).
- *           Si no se cumple, retorna "Datos inválidos".
- *        b. Usar un bucle for para recorrer el array y sumar todos los elementos.
- *        c. Retornar la suma total.
+ *        a. Verificar que n es de tipo number. Si no lo es, retorna "Datos inválidos".
+ *        b. Declarar un array vacío.
+ *        c. Utilizar un bucle for para llenar el array con números desde 0 hasta n (incluyendo n).
+ *        d. Retornar el array resultante.
  *
  * Ejemplo:
- *   sumarElementos([1, 2, 3, 4])
- *     => 10
+ *   generarRango(5)
+ *     => [0, 1, 2, 3, 4, 5]
  *
- * Nota: No utilices métodos de array como reduce; usa un bucle for.
+ * Nota: Asegúrate de usar un for loop y la notación de corchetes para agregar elementos al array.
  */
 
 /**
- * Suma los elementos de un array de números usando un for loop.
- * @param {number[]} numeros - El array de números.
- * @returns {number|string} La suma total de los elementos o "Datos inválidos" si la validación falla.
+ * Genera un array que contiene el rango de 0 a n (incluyendo n).
+ * @param {number} n - El número hasta el cual se genera el rango.
+ * @returns {number[]|string} Un array con números desde 0 hasta n o "Datos inválidos" si n no es un número.
  */
-const sumarElementos = (numeros) => {
-    if (!Array.isArray(numeros)) {
-        return "Datos inválidos"
+const generarRango = (n) => {
+    console.log(typeof n === "number" )
+    if ( typeof n !== "number" ) {
+        return "Datos invalidos"
     }
+    const rango = []
+    for (let i = 0; i <= n; i++){
+        rango.push(i)       
+        console.log(rango)
+    }
+    return rango
 
-  let suma = 0
-  const l = numeros.length
-  
-  for(let i = 0; i < l; i++){
-    const n = numeros[i]
-    suma += n
-    console.log("sumas en dentro del bucle:", suma )
-    
-  }
-  console.log("suma al final ", suma)
-    // TODO: Verifica que 'numeros' es un array y que cada elemento es un número.
-    // Si no, retorna "Datos inválidos".
-  
-    // TODO: Declara una variable 'suma' e inicialízala en 0.
-  
-    // TODO: Usa un bucle for para recorrer el array y sumar cada elemento a 'suma'.
-  
-    // TODO: Retorna la variable 'suma'.
-  };
-  
-  // Ejemplo de uso: Agrega tus propios console.log para probar la función.
-  console.log("Ejercicio 9 - sumarElementos([1, 2, 3, 4]):", sumarElementos([1, 2, 3, 340]));
-  
+    // TODO: Verifica que n es un número. Si no, retorna "Datos inválidos".
+
+    // TODO: Declara un array vacío, por ejemplo: const rango = [];
+
+    // TODO: Usa un bucle for para recorrer desde 0 hasta n (incluyendo n).
+    // Dentro del for, agrega cada número al array usando el método push.
+
+    // TODO: Retorna el array.
+};
+
+// Ejemplo de uso (agrega tus propios console.log para probar la función):
+//console.log("Ejercicio 10 - generarRango(5):", generarRango(5));
+console.log("Ejercicio 10 - generarRango(5):", generarRango(5));
+

@@ -23,6 +23,9 @@
  * @returns {number[]|string} Un array con números desde 0 hasta n o "Datos inválidos" si n no es un número.
  */
 const generarRango = (n) => {
+  if (typeof generarRango === n){
+    console.log(generarRango(n))
+  }
     // TODO: Verifica que n es un número. Si no, retorna "Datos inválidos".
   
     // TODO: Declara un array vacío, por ejemplo: const rango = [];
