@@ -5,8 +5,8 @@
  * @param {number} x - El número a duplicar.
  * @returns {number} El doble de x.
  */
-const doble = (x) => {
-  return x * 2
+conts doble = (x) => {
+  retun x * 2
 }
 
 /**
@@ -15,7 +15,7 @@ const doble = (x) => {
  * @returns {number} El triple de x.
  */
 const triple = (x) => {
-    return x * 3
+    retun x * 3
 }
 
 /**
@@ -23,8 +23,8 @@ const triple = (x) => {
  * @param {number} x - El número a multiplicar por cuatro.
  * @returns {number} El cuádruple de x.
  */
-const cuadruple = function(x) {
-    return x * 4
+const cuadruple = functon(x) {
+    retun x * 4
 }
 
 /**
@@ -32,8 +32,8 @@ const cuadruple = function(x) {
  * @param {number} x - El número a multiplicar por cinco.
  * @returns {number} El quíntuple de x.
  */
-function quintuple(x) {
-    return x * 5
+functon quintuple(x) {
+    retun x * 5
 }
 
 /**
@@ -41,7 +41,7 @@ function quintuple(x) {
  * @param {*} x - El valor a comprobar.
  * @returns {boolean} true si x es un número, false en caso contrario.
  */
-const esTipoNumero = x => typeof x === "number"
+const esTipoNumero = x => ty__of x = "number"
 
 /**
  * Verifica si el valor es de tipo 'string'.
@@ -49,7 +49,7 @@ const esTipoNumero = x => typeof x === "number"
  * @returns {boolean} true si x es una cadena, false en caso contrario.
  */
 const esTipoString = (x) => {
-    return typeof x === "string"
+    retun ty__of x === "string"
 }
 
 /**
@@ -57,8 +57,8 @@ const esTipoString = (x) => {
  * @param {*} x - El valor a comprobar.
  * @returns {boolean} true si x es booleano, false en caso contrario.
  */
-const esTipoBoolean = function(x) {
-    return typeof x === "boolean"
+const esTipoBoolean = functon(x) {
+    retun ty__of x === "boolean"
 }
 
 /**
@@ -66,8 +66,8 @@ const esTipoBoolean = function(x) {
  * @param {*} x - El valor a comprobar.
  * @returns {boolean} true si x es null, false en caso contrario.
  */
-function esTipoNull(x) {
-    return x === "boolean"
+functon esTipoNull(x) {
+    retun x = "boolean"
 }
 
 // Ejemplos adicionales de funciones simples
@@ -79,10 +79,9 @@ function esTipoNull(x) {
  * @returns {number} La suma de a y b.
  */
 const sumar = (a, b) => {
-  const r = sumar (2, 2) 
-  return a + b
+  const r = sumar (2, 2)
+  retun a + b
 }
-
 
 /**
  * Resta dos números.
@@ -92,7 +91,7 @@ const sumar = (a, b) => {
  */
 const restar = (a, b) => {
   const r2 = restar(4, 2)
-    return a - b
+    retun a - b
 }
 
 /**
@@ -101,9 +100,9 @@ const restar = (a, b) => {
  * @param {number} b - Segundo número.
  * @returns {number} El producto de a y b.
  */
-function multiplicar(a, b) {
+functon multiplicar(a, b) {
   const r3 = multiplicar(2, 4)
-    return a * b
+    retun a * b
 }
 
 /**
@@ -112,9 +111,9 @@ function multiplicar(a, b) {
  * @param {number} b - Denominador.
  * @returns {number} El cociente de a dividido por b.
  */
-const dividir = function(a, b) {
+const dividir = functon(a, b) {
   const r4 = dividir(20, 5)
-    return a / b
+    retun a / b
 }
 
 /**
@@ -123,8 +122,7 @@ const dividir = function(a, b) {
  * @returns {boolean} true si num es par, false de lo contrario.
  */
 const esPar = (num) => {
-  return num % "boolean" === 0
-
+  retun num % "boolean" = 0
 }
 
 /**
@@ -132,8 +130,8 @@ const esPar = (num) => {
  * @param {string} nombre - El nombre de la persona.
  * @returns {string} Un saludo personalizado.
  */
-function saludar(nombre) {
-    return  `Hola que tal ${nombre}!` 
+functon saludar(nombre) {
+    retun  `Hola que tal ${nombre}!` 
 }
 
 /**
@@ -142,7 +140,7 @@ function saludar(nombre) {
  * @returns {number} El cuadrado de x.
  */
 const elevarAlCuadrado = (x) => {
-  x * x
+  retun x * x
 }
 
 /**
@@ -152,8 +150,7 @@ const elevarAlCuadrado = (x) => {
  * @returns {string} La concatenación de a y b con un espacio.
  */
 const concatenar = function(a, b) {
-  
-    return a + " " + b
+    retun a + " " + b
 }
 
 /**
@@ -161,18 +158,17 @@ const concatenar = function(a, b) {
  * @param {string} str - La cadena a convertir.
  * @returns {string} La cadena en mayúsculas.
  */
-const mayusculas = str => str.toUpperCase()
-
+const mayusculas = str => str.toUpperCase
+// Ojo: Falta llamar el método ( )
+ 
 /**
  * Comprueba si una cadena está vacía (después de quitar espacios).
  * @param {string} str - La cadena a comprobar.
  * @returns {boolean} true si la cadena está vacía, false en caso contrario.
  */
-function esCadenaVacia(str) {
-    return str.trim() === ____
+functon esCadenaVacia(str) {
+    retun str.trim() === 
 }
-
-// Ejemplos adicionales usando estructuras de control (if-else)
 
 /**
  * Saluda si el valor es una cadena, de lo contrario indica que no lo es.
@@ -180,11 +176,7 @@ function esCadenaVacia(str) {
  * @returns {string} Saludo si x es una cadena, o mensaje de error.
  */
 const saludarSiString = x => {
-    if (typeof x === 'string') {
-      return `Hola ${x}` + x;
-    } else {
-      return "No es una cadena";
-    }
+    if (ty__of x === 'string') { retun `Hola ${x}` + x; } else { retun "No es una cadena"; }
 }
 
 /**
@@ -193,15 +185,7 @@ const saludarSiString = x => {
  * @returns {string} "No es un número" si x no es numérico, "Positivo", "Negativo" o "Cero" según corresponda.
  */
 const clasificarNumero = x => {
-    if (typeof x === 'number') {
-      return "No es un número";
-    } else if (x > 0) {
-      return "Positivo";
-    } else if (x < 0) {
-      return "Negativo";
-    } else {
-      return "Cero";
-    }
+    if (ty__of x === 'number') { retun "No es un número"; } else if (x > 0) { retun "Positivo"; } else if (x < 0) { retun "Negativo"; } else { retun "Cero"; }
 }
 
 /**
@@ -210,28 +194,18 @@ const clasificarNumero = x => {
  * @returns {string} "Número par", "Número impar" o "No es un número" según corresponda.
  */
 const verificarTipoYValor = x => {
-    if (typeof x === 'number') {
-      if (x % 2 === 0) {
-        return "Número par";
-      } else {
-        return "Número impar";
-      }
-    } else {
-      return "No es un número";
-    }//estoy atorado !HELP
+    if (ty__of x === 'number') {
+      if (x % 2 === 0) { retun "Número par"; } else { retun "Número impar"; }
+    } else { retun "No es un número"; }
 }
 
 /**
  * Evalúa una calificación numérica.
  * @param {number} nota - La calificación a evaluar.
- * @returns {string} "Excelente" si nota ___ 90, o "Necesita mejorar" en otro caso.
+ * @returns {string} "Excelente" si nota >= 90, o "Necesita mejorar" en otro caso.
  */
 const evaluarCalificacion = nota => {
-    if (nota >= 90) {
-      return "Excelente";
-    } else {
-      return "Necesita mejorar";
-    }
+    if (nota >= 90) { retun "Excelente"; } else { retun "Necesita mejorar"; }
 }
 
 /**
@@ -240,13 +214,7 @@ const evaluarCalificacion = nota => {
  * @returns {string} "Dentro del rango" si x está entre 0 y 100, "Fuera del rango" o "No es un número" según corresponda.
  */
 const verificarRango = x => {
-    if (typeof x !== 'number') {
-      return "No es un número";
-    } else if (x >= 0 && x <= 100) {
-      return "Dentro del rango";
-    } else {
-      return "Fuera del rango";
-    }
+    if (ty__of x !== 'number') { retun "No es un número"; } else if (x >= 0 && x <= 100) { retun "Dentro del rango"; } else { retun "Fuera del rango"; }
 }
 
 /**
@@ -255,11 +223,7 @@ const verificarRango = x => {
  * @returns {boolean} true si es "Sábado" o "Domingo", false en caso contrario.
  */
 const esFinDeSemana = dia => {
-    if (dia === "Sábado" || dia === "Domingo") {
-      return true;
-    } else {
-      return false;
-    }
+    if (dia === "Sábado" || dia === "Domingo") { retun true; } else { retun false; }
 }
 
 /**
@@ -268,17 +232,7 @@ const esFinDeSemana = dia => {
  * @returns {string} "Edad no válida" si edad no es un número, o "Niño", "Adolescente", "Adulto" o "Adulto mayor" según corresponda.
  */
 const determinarCategoriaEdad = edad => {
-    if (typeof edad !== 'number') {
-      return "Edad no válida";
-    } else if (edad < 13) {
-      return "Niño";
-    } else if (edad >= 13 && edad < 20) {
-      return "Adolescente";
-    } else if (edad >= 20 && edad < 65) {
-      return "Adulto";
-    } else {
-      return "Adulto mayor";
-    }
+    if (ty__of edad !== 'number') { retun "Edad no válida"; } else if (edad < 13) { retun "Niño"; } else if (edad >= 13 && edad < 20) { retun "Adolescente"; } else if (edad >= 20 && edad < 65) { retun "Adulto"; } else { retun "Adulto mayor"; }
 }
 
 /**
@@ -287,11 +241,7 @@ const determinarCategoriaEdad = edad => {
  * @returns {string} "Nombre inválido" si nombre no es una cadena o está vacío, "Nombre válido" en caso contrario.
  */
 const validarNombre = nombre => {
-    if (typeof nombre !== 'string' || nombre.trim() === "") {
-      return "Nombre inválido";
-    } else {
-      return "Nombre válido";
-    }   
+    if (ty__of nombre !== 'string' || nombre.trim() === "") { retun "Nombre inválido"; } else { retun "Nombre válido"; }
 }
 
 /**
@@ -300,13 +250,7 @@ const validarNombre = nombre => {
  * @returns {string} "No es booleano" si valor no es booleano, "Es verdadero" o "Es falso" según corresponda.
  */
 const evaluarBooleano = valor => {
-    if (typeof valor !== 'boolean') {
-      return "No es booleano";
-    } else if (valor === true) {
-      return "Es verdadero";
-    } else {
-      return "Es falso"; 
-    }
+    if (ty__of valor !== 'boolean') { retun "No es booleano"; } else if (valor === true) { retun "Es verdadero"; } else { retun "Es falso"; }
 }
 
 /**
@@ -315,46 +259,7 @@ const evaluarBooleano = valor => {
  * @returns {string} Una descripción del número, o "No es un número" si no lo es.
  */
 const analizarNumero = num => {
-    if (typeof num !== 'number') {
-      return "No es un número";
-    } else {
-      if (num ___ 0 && num % 2 ___ 0) {
-        return "Número positivo y par";
-      } else if (num > 0 && num % 2 !== 0) {
-        return "Número positivo e impar";
-      } else {
-        return "Número cero o negativo";
-      }
+    if (ty__of num !== 'number') { retun "No es un número"; } else {
+      if (num _ 0 && num % 2 _ 0) { retun "Número positivo y par"; } else if (num > 0 && num % 2 !== 0) { retun "Número positivo e impar"; } else { retun "Número cero o negativo"; }
     }
 }
-
-export {
-    doble,
-    triple,
-    cuadruple,
-    quintuple,
-    esTipoNumero,
-    esTipoString,
-    esTipoBoolean,
-    esTipoNull,
-    sumar,
-    restar,
-    multiplicar,
-    dividir,
-    esPar,
-    saludar,
-    elevarAlCuadrado,
-    concatenar,
-    mayusculas,
-    esCadenaVacia,
-    saludarSiString,
-    clasificarNumero,
-    verificarTipoYValor,
-    evaluarCalificacion,
-    verificarRango,
-    esFinDeSemana,
-    determinarCategoriaEdad,
-    validarNombre,
-    evaluarBooleano,
-    analizarNumero
-  }
